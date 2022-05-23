@@ -3,7 +3,7 @@ import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
 import styled from 'styled-components';
 
-export default function SelecionarAssento(){
+export default function SelecionarAssento(props){
     const [assento, setAssento] = useState([]);
     const {idSessao} = useParams();
     const [filme, setFilme] = useState({});
@@ -23,7 +23,7 @@ export default function SelecionarAssento(){
             <Assentos>
                 {assento.map(item => 
                 
-                    <div className={`${props.isAvailable ? "disponivel" : "indisponivel"}`}>{item.name}</div>)}
+                    <div>{item.name}</div>)}
             </Assentos>
             <Inputs>
                 <p>Nome do comprador:</p>
@@ -77,7 +77,7 @@ const Assentos = styled.div`
         width: 25px;
         height: 25px;
         border-radius: 17px;
-        background-color: ${props => props.cor ? '#C3CFD9' : '#FBE192'};
+        background-color: #C3CFD9;
 
     }
 `;
