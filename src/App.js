@@ -7,7 +7,7 @@ import Sucesso from "./Componentes/Sucesso";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
-export default function Teste(){
+export default function App(){
     return(
         <BrowserRouter>
 

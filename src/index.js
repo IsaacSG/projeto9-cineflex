@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import App from "./App";
 import "./Styles/reset.css";
 
-function Teste(){
+function Index(){
     return(
         <>
             <App />
@@ -11,4 +11,4 @@ function Teste(){
     );
 }
 
-ReactDOM.render(<Teste />, document.querySelector(".root"));
+ReactDOM.render(<Index />, document.querySelector(".root"));
